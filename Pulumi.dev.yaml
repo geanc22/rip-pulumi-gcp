@@ -1,0 +1,26 @@
+config:
+  gcp:project: rip-gti-desa
+  gcp:credentials:
+    secure: AAABAAAPKvB/7fXIC/qa4O10OeBCf2BwKCJLSXrZOpt5WiQksQj0TGJ4944hig2MYOUCpLjzDdo79BNYXi1UN9C9PyOeORwlKHquUr2Uww==
+  #--- Configuración de Cloud Storage Buckets---#
+  #---- Bucket Basic---#
+  publicBucketName: "dev-public-bucket"
+  privateBucketName: "dev-private-bucket"
+  bucketLocation: "southamerica-west1"
+
+  ##---Buckets private personalizado-----#
+  project_id: "rip-pulumi-gcp"
+  env: "dev"
+  account: "ripley"
+  location: "southamerica-west1"
+  force_destroy: true
+  origin: "internal"
+  target: "production"
+
+  ##---- Repo Artifac registry personalizado (en contruccion)---#
+  # artifact_registry:
+  #   name: "my-artifact-repo"
+  #   format: "DOCKER"  # Opciones: DOCKER, MAVEN, NPM, PYTHON, etc.
+  #   description: "Repositorio de imágenes Docker para el entorno dev"
+  #   project_id: "rip-pulumi-gcp"
+  #   location: "southamerica-west1"

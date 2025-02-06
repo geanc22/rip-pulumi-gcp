@@ -1,0 +1,11 @@
+name: rip-pulumi-gcp
+description: IAC pulumi en GCP para el Proyecto Ripley DM
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: gcp-python
